@@ -1,0 +1,8 @@
+## Interface: 110200, 120000
+## Title: WQA - World Quest Alert
+## Notes: Track specific world quests and get notified when they're active
+## Author: Znuff
+## Version: 1.0.0
+## SavedVariables: WQADB
+
+WQA.lua
