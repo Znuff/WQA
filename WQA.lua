@@ -3,7 +3,7 @@ local ADDON_NAME, ns = ...
 -- Defaults
 local defaults = {
     trackedQuests = {},
-    sound = 311394, -- false to disable, or soundkit ID
+    sound = 311509, -- false to disable, or soundkit ID
 }
 
 -- Local references
@@ -389,4 +389,5 @@ frame:RegisterEvent("ZONE_CHANGED")
 frame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 frame:RegisterEvent("ZONE_CHANGED_INDOORS")
 frame:RegisterEvent("QUEST_LOG_UPDATE")
+
 frame:SetScript("OnEvent", OnEvent)
