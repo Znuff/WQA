@@ -143,7 +143,7 @@ local function CheckWorldQuests()
             local mapID = C_TaskQuest.GetQuestZoneID(questID)
             
             if mapID then
-                local questsActive = C_TaskQuest.GetQuestsForPlayerByMapID(mapID)
+                local questsActive = C_TaskQuest.GetQuestsOnMap(mapID)
                 local mapInfo = C_Map.GetMapInfo(mapID)
                 
                 if questsActive and mapInfo then
@@ -226,7 +226,7 @@ local function ListQuests()
         local status = ""
         local mapID = C_TaskQuest.GetQuestZoneID(questID)
         if mapID then
-            local questsActive = C_TaskQuest.GetQuestsForPlayerByMapID(mapID)
+            local questsActive = C_TaskQuest.GetQuestsOnMap(mapID)
             if questsActive then
                 for _, questInfo in ipairs(questsActive) do
                     if questInfo.questID == questID then
